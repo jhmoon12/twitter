@@ -7,7 +7,7 @@ function App() {
   const [isLoggedin, setIsLoggedin ] = useState(authService.currentUser);
   return (
   <>
-    <AppRouter isLoggedin/>
+    <AppRouter isLoggedin={isLoggedin}/>
     <footer>&copy; {new Date().getFullYear()} twitter</footer>
   </>
   )
